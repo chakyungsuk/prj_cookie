@@ -9,21 +9,22 @@
 	<body>
 	
 	<h3>회원가입 수정</h3>
+	<form action="./memberView.html" method="get" id="post" name="post" enctype="multipart/form-data"></form>
+	
 	<table border="1">
 		<tr>
 			<th width="170px">이 름</th>
-			<td width="150px"><input type="text"></td>
+			<td width="150px"><input type="text" id="" name="" value="고 양 이"></td>
 			<th rowspan="6">사 진</th>
-			<td rowspan="6"><img src="./cat.jpg" width="170px"
-				height="170px"></td>
+			<td rowspan="6"><img src="./cat.jpg" width="230px" height="150px"></td>
 		</tr>
 		<tr>
 			<th>생 일</th>
-			<td><input type="date" id="" name="" value="2000-01-01"></td>
+			<td><input type="date" id="" name="" value="2020-01-01"></td>
 		</tr>
 		<tr>
 			<th>아 이 디</th>
-			<td>apple</td>
+			<td><input type="text" id="" name="" value="cha0054"></td>
 		</tr>
 		<tr>
 			<th>성 별</th>
@@ -31,67 +32,100 @@
 		</tr>
 		<tr>
 			<th>국 적</th>
-			<td>대한민국</td>
+			<td><select>
+					<option>대한민국</option>
+					<option>이란</option>
+					<option>태국</option>
+					<option>스위스</option>
+					<option>북한</option>
+			</select></td>
 		</tr>
 		<tr>
 			<th>비밀번호</th>
-			<td><input type="password" value="1111"></td>
+			<td><input type="password" id="" name="" value="1234"></td>
 		</tr>
 		<tr>
 			<th>주 소</th>
-			<td colspan="3">서울특별시 강서구</td>
+			<td colspan="3"><input type="text" size=80 id="" name="" value="서울특별시 강서구"></td>
 		</tr>
 		<tr>
 			<th>모바일</th>
-			<td>000-0000-0000</td>
+			<td><select>
+					<option>010</option>			
+					<option>011</option>			
+			</select>-<input type="text" size="1" value="1234">-<input type="text" size="1" value="1234"></td>
 			<th>모바일 마케팅 수신 동의</th>
-			<td> <input type="checkbox"> </td>
+			<td>동의<input type="radio" id="" name="ch" value="y" checked> 미동의<input type="radio" id="" name="ch" value="n"></td>
 		</tr>
 		<tr>
 			<th>전화번호</th>
-			<td> - </td>
+			<td><select>
+					<option>02</option>
+					<option>062</option>
+					<option>042</option>
+					<option>031</option>
+			</select>-<input type="text" size="1" id="" name="" value="1234">-<input type="text" size="1" id="" name="" value="1234"></td>
 			<th>팩스번호</th>
-			<td> - </td>
+			<td><select>
+					<option>02</option>
+					<option>062</option>
+					<option>042</option>
+					<option>031</option>
+			</select>-<input type="text" size="1" id="" name="" value="3451">-<input type="text" size="1" id="" name="" value="3828"></td>
 		</tr>
 		<tr>
 			<th>이메일</th>
-			<td colspan="4"><input type="email"></td>
+			<td colspan="4"><input type="text" size="" value="cha0054"> @ 
+				 <select>
+				 	<option>naver.com</option>
+				 	<option>gamil.com</option>
+				 	<option>hanmail.net</option>
+				 	<option>awekfjks.net</option>
+				 	<option></option>
+				 </select>
+			</td>
 		</tr>
 		<th>추천인</th>
-		<td>사과</td>
+		<td><input type="text" value="멍멍이"></td>
 		<th>이메일 마케팅 수신 동의</th>
-		<td><input type="checkbox"></td>
+		<td>동의<input type="radio" id="" name="cs"	value="y" checked> 미동의<input type="radio" id="" name="cs" value="n"></td>
 		<tr>
 			<th>비밀번호 문제</th>
-			<td>무슨나무?</td>
+			<td><input type="text" placeholder="직접 문제 입력" value="사과나무는?"></td>
 			<th>비밀번호 답</th>
-			<td>사과</td>
+			<td><input type="text" size="32" value="사과"></td>
 		</tr>
 		<tr>
 			<th>sns 계정</th>
-			<td>apple</td>
+			<td><input type="text" value="cha0054"></td>
 			<th>홈 페이지</th>
-			<td>www.apple.net</td>
-		</tr>
+			<td><input type="text" size="32" value="https://www.instagram.com"></td>
+		</tr>	
 		<tr>
 			<th>직 업</th>
-			<td>개 발 자</td>
+			<td><input type="text" value="개발자"></td>
 			<th>결혼여부</th>
-			<td>기혼<input type="radio" id="" name="marry"> 미혼<input type="radio" id="" name="marry" checked></td>
+			<td>기혼<input type="radio" id="" name="marry" value="y"> 미혼<input type="radio" id="" name="marry" value="n" checked></td>
 		</tr>
 		<tr>
 			<th>결혼기념일</th>
-			<td><input type="date" value="2022-01-01"></td>
+			<td><input type="date" value=""></td>
 			<th>자녀유무</th>
-			<td>유<input type="radio" id="" name="apple"> 무<input type="radio" id="" name="apple" checked></td>
+			<td>유<input type="radio" id="" name="apple" value="y"> 무<input type="radio" id="" name="apple" value="n" checked></td>
 		</tr>
 		<tr>
 			<th>취 미(중복가능)</th>
-			<td colspan="3">밥먹기, 낮잠자기, 멍때리기, 집안 헤집어 놓기</td>
+			<td colspan="3">운동<input type="radio" id="" name="a" value="" checked>
+							독서<input type="radio" id="" name="b" value="">
+							게임<input type="radio" id="" name="c" value=""checked>
+							개발<input type="radio" id="" name="d" value=""checked>
+							낮잠<input type="radio" id="" name="d" value="">
+							자전거<input type="radio" id="" name="d" value="">
+			직접입력 <input type="text" size="2"></td>
 		</tr>
 		<tr>
 			<th>좋아하는 색</th>
-			<td colspan="3">오렌지</td>
+			<td colspan="3"><input type="color" value="#00ff00"></td>
 		</tr>
 
 	</table>
@@ -100,61 +134,73 @@
 	<table border="1">
 		<tr>
 			<th>/</th>
-			<th width="200px">프로젝트명</th>
-			<th width="200px">참여기간</th>
-			<th width="120px">역할</th>
-			<th width="130px">발주사</th>
+			<th width="150px">프로젝트명</th>
+			<th width="330px">참여기간</th>
+			<th width="100px">역할</th>
+			<th width="100px">발주사</th>
 		</tr>
 		<tr>
 			<th>1</th>
-			<td>개발</td>
-			<td>01.01.01 ~ 02.02.02</td>
-			<td>보조</td>
-			<td>000</td>
+			<td><input type="txet" value="개발"></td>
+			<td><input type="date" value="2021-01-01"> ~ <input type="date" value="2022-01-01"></td>
+			<td><input type="text" value="보조" size="9"></td>
+			<td><input type="text" value="000" size="9"></td>
 		</tr>
 		<tr>
 			<th>2</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><input type="txet"></td>
+			<td><input type="date"> ~ <input type="date"></td>
+			<td><input type="text" size="9"></td>
+			<td><input type="text" size="9"></td>
 		</tr>
 		<tr>
 			<th>3</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><input type="txet"></td>
+			<td><input type="date"> ~ <input type="date"></td>
+			<td><input type="text" size="9"></td>
+			<td><input type="text" size="9"></td>
 		</tr>
 		<tr>
 			<th>4</th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><input type="txet"></td>
+			<td><input type="date"> ~ <input type="date"></td>
+			<td><input type="text" size="9"></td>
+			<td><input type="text" size="9"></td>
 		</tr>
 	</table>
 
 	<table border="1">
 		<h3>본 인 소 개</h3>
 		<tr>
-			<td width="680px" height="200px">청춘에서만 같은 청춘 쓸쓸하랴? 인간에 소금이라 가장
+			<td width="720px" height="200px">
+			청춘에서만 같은 청춘 쓸쓸하랴? 인간에 소금이라 가장
 				오직 피에 부패뿐이다. 모래뿐일 있는 가는 웅대한 그들은 가진 기관과 품고 위하여, 보라. 못할 바이며, 오직 그들에게
 				그러므로 광야에서 우리는 남는 부패뿐이다. 우리 청춘 관현악이며, 것은 구하지 불러 같이 찬미를 이것이다. 그들의 동력은
 				굳세게 되는 살 돋고, 이것을 물방아 무엇을 봄바람이다. 모래뿐일 끝까지 청춘의 목숨을 실로 우리는 그러므로 것은 아름답고
 				이것이다. 피어나는 용기가 피는 이것이야말로 이것이다. 위하여서, 열락의 거친 살 영원히 사막이다. 이상의 있으며, 청춘
-				풀이 동력은 구하지 때에, 것이다. 하는 위하여 그들은 뜨거운지라, 살았으며, 날카로우나 곧 맺어, 따뜻한 듣는다.</td>
+				풀이 동력은 구하지 때에, 것이다. 하는 위하여 그들은 뜨거운지라, 살았으며, 날카로우나 곧 맺어, 따뜻한 듣는다."
+				
+			</td>
+				
 		</tr>
 		</tabel>
 		<table border="1"><br>
 			<tr>
-				<th width="150px">개인정보 유효 기간</th>
-				<td width="525px">1년 ( O ) 3년 ( &nbsp ) 5년 ( &nbsp ) 10년 (
-					&nbsp )</td>
+				<th width="190px">개인정보 유효 기간</th>
+				<td width="525px">1년<input type="radio" id="" name="asd">
+								  3년<input type="radio" id="" name="asd" checked>
+								  5년<input type="radio" id="" name="asd">
+								  10년<input type="radio" id="" name="asd">
+							
+				</td>
+				
 			</tr>
 		</table>
-		
-	<br><a href="../../index.html"><input type="submit" value="맨처음으로"></a>
-       
+		<br>
+				<input type="button" id="" name=""	value="제출">&nbsp&nbsp<a href="./memberForm.html"><input type="button" value="초기화"></a>
+			<br>			
+				<br><a href="../../index.html"><input type="submit" value="맨처음으로"></a>
+	</form>
+    
 	</body>
 </htm1>
