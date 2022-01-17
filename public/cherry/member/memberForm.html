@@ -4,207 +4,293 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=dievice-width, initiol-scale=1.0">
-	
 
-	<title>Cha html projects</title>
-	
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>Cha html projects</title>
 </head>
-	<body>
-	<link href="../../../../study_html/public/css/style.css" rel="stylesheet" type="text/css">
+<body>
+<style type="text/css">
+		body{
+			background-color: #efebe9; 
+		}
+		/* table{
+			background-color: #bcaaa4; */
+			/* background-image: url(../../../../study_html/public/images/post.jpg); 
+			background-size: 1800px 1250px;
+		}  */
+		h3{
+			font-family: 궁서체;
+		}
+		th, p{
+			text-align: center;
+			font-style: oblique;
+		}
+</style> 
 	
-	<h3><li>회원가입 수정</h3>
+	<table class="table table-hover">
+  <thead>
+   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+   <P>Music</P><audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
+    padding-bottom: 10px;">뮤직</audio> <tr><h3>회원정보 수정</h3></tr>
+   </div>
+  </thead>
+  <br>
+  <tbody>
+    <tr>
+      <th scope="row" class="table-active">이 름</th>
+      <td colspan="2"> <div class="mb-1">
+    <input type="text" class="form-control"></td>
+      <th rowspan="4" style="padding-top: 95px;" class="table-active">사 진</th>
+      <td rowspan="4" colspan="3"><input type="file" width="200px" height="200px" style="margin-top: 70px;"></td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">생 일</th>
+      <td>2020-01-12</td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">국 적</th>
+      <td colspan="2">대한민국</td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">성 별</th>
+      <td colspan="2"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" name="apple" value="option3"  >
+  <label class="form-check-label" for="inlineCheckbox3">남</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" name="apple" value="option3" >
+  <label class="form-check-label" for="inlineCheckbox3">여</label>
+</div></td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">아이디</th>
+      <td colspan="2"><div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputPassword1"></td>
+      <th class="table-active">비밀번호</th>
+      <td> <div class="mb-3">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="최대 8자리" maxlength="8">
+  </div> </td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">비밀번호 힌트</th>
+      <td colspan="2">좋아하는 나무는?</td>
+      <th class="table-active">비밀번호 힌트 답</th>
+      <td>사과나무</td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">주 소 </th>
+      <td colspan="4">서울특별시 강서구</td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">이메일</th>
+      <td><form class="row gy-2 gx-3 align-items-center">
+  <div class="col-auto">
+    <label class="visually-hidden" for="autoSizingInput">Name</label>
+    <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+  </div>
+  <div class="col-auto">
+    <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+    <div class="input-group">
+      <div class="input-group-text">@</div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+    </div>
+	 </td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">추천인</th>
+      <td colspan="2"> <div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputPassword1"></td>
+      <th class="table-active">직 업</th>
+      <td><div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputPassword1"></td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">sns계정</th>
+      <td colspan="2">apple</td>
+	  <th class="table-active">홈페이지</th>      
+      <td>www.apple.net</td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">결혼유무</th>
+      <td colspan="2"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" name="banana" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">미혼</label>
+</div>
+		<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" name="banana"  value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">기혼</label>
+</div></td>
+      <th class="table-active">자녀유무</th>
+      <td><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" name="cherry"  value="option3"  >
+  <label class="form-check-label" for="inlineCheckbox3">무</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" name="cherry" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">유</label>
+</div></td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">결혼기념일</th>
+      <td colspan="2"> - </td>
+      <th class="table-active">좋아하는 색</th>
+      <td class="form-label">
+		<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color"></td>
+    </tr>
+    <tr>
+      <th scope="row" class="table-active">모바일 마케팅 수신 동의</th>
+      <td colspan="2"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window1"  >
+  <label class="form-check-label" for="inlineCheckbox3">동의</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window1" >
+  <label class="form-check-label" for="inlineCheckbox3">미동의</label>
+</div></td>
+      <th class="table-active">이메일 마케팅 수신 동의</th>
+      <td><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window2">
+  <label class="form-check-label" for="inlineCheckbox3">동의</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window2">
+  <label class="form-check-label" for="inlineCheckbox3">미동의</label>
+</div></td>
+    </tr>
+    <th class="table-active">취미(중복가능)</th>
+      
+      <td colspan="4"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" >
+  <label class="form-check-label" for="inlineCheckbox1">운동</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" >
+  <label class="form-check-label" for="inlineCheckbox2">독서</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+  <label class="form-check-label" for="inlineCheckbox3">게임</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option4" >
+  <label class="form-check-label" for="inlineCheckbox3">개발</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option5" >
+  <label class="form-check-label" for="inlineCheckbox3">낮잠</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option5" >
+  <label class="form-check-label" for="inlineCheckbox3">자전거</label>
+
+    </tr>
+  </tbody>
+</table>
+<table class="table table-hover">
+  <thead>
+   <tr><h3>프로젝트 참여</h3></tr>
+  </thead>
+  <tbody>
+  <Style type="text/css">
+  		.apple{
+  			text-align: center;
+  		}
+  </Style>
+  	<tr>
+  	  <th width="50px" class="table-active">/</th>
+      <th width="150px" class="table-active">프로젝트명</th>
+      <th width="350px" class="table-active">참여기간</th>
+      <th width="150px" class="table-active">역할</th>
+      <th width="150px" class="table-active">발주사</th>
+    </tr>  
+  	  <th class="table-active">1</th>
+      <td class="apple"><div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputPassword1"></td>
+      <td class="apple">01.01.01 ~ 02.02.02</td>
+      <td class="apple"><div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputPassword1" maxlength="8"></td>
+      <td class="apple"><div class="mb-3">
+    <input type="text" class="form-control" id="exampleInputPassword1" maxlength="8"></td>
+    <tr>
+  	  <th scope="row" class="table-active">2</th>
+      <td></td>
+      <th></th>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+  	  <th scope="row" class="table-active">3</th>
+      <td></td>
+      <th></th>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+  	  <th scope="row" class="table-active">4</th>
+      <td></td>
+      <th></th>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+  
+  <br>
+
+<table class="table table-hover">
+	<thead>
+		<tr><h3>본 인 소 개</h3></tr>
+	</thead>
+	<br>
+		<tbody>
+			<div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 250px" maxlength="200"></textarea>
+  <label for="floatingTextarea2">최대 200글자 가능</label>
+</div>
+		</tbody>
 		
-	<table border="1">
-		<tr>
-			<th width="170px">이 름</th>
-			<td width="150px"><input type="text" id="" name=""></td>
-			<th rowspan="6">사 진</th>
-			<td rowspan="6"><input type="file"  height="170px"></td>
-		</tr>	
-		<tr>
-			<th>생 일</th>
-			<td><input type="date" id="" name=""></td>
-		</tr>
-		<tr>
-			<th>아 이 디</th>
-			<td><input type="text"></td>
-		</tr>
-		<tr>
-			<th>성 별</th>
-			<td>남<input type="radio" id="" name="human">여<input type="radio" id="" name="human"></td>
-		</tr>
-		<tr>
-			<th>국 적</th>
-			<td><select>
-					<option>대한민국</option>
-					<option>이란</option>
-					<option>태국</option>
-					<option>스위스</option>
-					<option>북한</option>
-			</select></td>
-		</tr>
-		<tr>
-			<th>비밀번호</th>
-			<td><input type="password"></td>
-		</tr>
-		<tr>
-			<th>주 소</th>
-			<td colspan="3"><input type="text" size=80 id="" name=""></td>
-		</tr>
-		<tr>
-			<th>모바일</th>
-			<td><select>
-					<option>010</option>			
-					<option>011</option>			
-			</select>-<input type="text" size="1">-<input type="text" size="1"></td>
-			<th>모바일 마케팅 수신 동의</th>
-			<td>동의<input type="radio" id="" name="ch" value="y"> 미동의<input type="radio" id="" name="ch" value="n"></td>
-		</tr>
-		<tr>
-			<th>전화번호</th>
-			<td><select>
-					<option>02</option>
-					<option>062</option>
-					<option>042</option>
-					<option>031</option>
-			</select>-<input type="text" size="1">-<input type="text" size="1"> </td>
-			<th>팩스번호</th>
-			<td><select>
-					<option>02</option>
-					<option>062</option>
-					<option>042</option>
-					<option>031</option>
-			</select>-<input type="text" size="1">-<input type="text" size="1"></td>
-		</tr>
-		<tr>
-			<th>이메일</th>
-			<td colspan="4"><input type="text" size=""> @ 
-				 <select>
-				 	<option>naver.com</option>
-				 	<option>gamil.com</option>
-				 	<option>hanmail.net</option>
-				 	<option>awekfjks.net</option>
-				 	<option></option>
-				 </select>
-			</td>
-		</tr>
-		<th>추천인</th>
-		<td><input type="text"></td>
-		<th>이메일 마케팅 수신 동의</th>
-		<td>동의<input type="radio" id="" name="cs"	value="y"> 미동의<input type="radio" id="" name="cs" value="n"></td>
-		<tr>
-			<th>비밀번호 문제</th>
-			<td><input type="text" placeholder="직접 문제 입력"></td>
-			<th>비밀번호 답</th>
-			<td><input type="text" size="32"></td>
-		</tr>
-		<tr>
-			<th>sns 계정</th>
-			<td><input type="text"></td>
-			<th>홈 페이지</th>
-			<td><input type="text" size="32"></td>
-		</tr>
-		<tr>
-			<th>직 업</th>
-			<td><input type="text"></td>
-			<th>결혼여부</th>
-			<td>기혼<input type="radio" id="" name="marry"> 미혼<input type="radio" id="" name="marry"></td>
-		</tr>
-		<tr>
-			<th>결혼기념일</th>
-			<td><input type="date"></td>
-			<th>자녀유무</th>
-			<td>유<input type="radio" id="" name="apple"> 무<input type="radio" id="" name="apple"></td>
-		</tr>
-		<tr>
-			<th>취 미(중복가능)</th>
-			<td colspan="3">운동<input type="checkbox" id="" name="" value="운동">
-							독서<input type="checkbox" id="" name="" value="독서">
-							게임<input type="checkbox" id="" name="" value="게임">
-							개발<input type="checkbox" id="" name="" value="개발">
-							낮잠<input type="checkbox" id="" name="" value="낮잠">
-							자전거<input type="checkbox" id="" name="" value="자전거">
-			직접입력 <input type="text" size="2"></td>
-		</tr>
-		<tr>
-			<th>좋아하는 색</th>
-			<td colspan="3"><input type="color"></td>
-		</tr>
+<table class="table">
+  <thead>
+    <tr></tr>
+  </thead>
+  <tbody>
+    
+    <br>
+<tr>
+      <th scope="row" class="table-active">개인정보 유효 기간</th>
+      <td colspan="4"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option3" name="window3" >
+  <label class="form-check-label" for="inlineCheckbox1">1년</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option3" name="window3">
+  <label class="form-check-label" for="inlineCheckbox2">2년</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window3">
+  <label class="form-check-label" for="inlineCheckbox3">3년</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox4" value="option3" name="window3" >
+  <label class="form-check-label" for="inlineCheckbox4">5년</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox5" value="option3" name="window3">
+  <label class="form-check-label" for="inlineCheckbox5">10년</label>
+</div>
+</td>
+    
+    </tr>
+  </tbody>
+</table>		
 
-	</table>
+<div class="d-grid gap-2 d-md-flex justify-content-center">
+<nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+	        <li class="breadcrumb-item"><a href="./memberView.html">확인</a></li>
+	        <li class="breadcrumb-item"><a href="./memberForm.html">초기화</a></li>
+	        <li class="breadcrumb-item"><a href="./memberList.html">목록</a></li>
+        </ol>
+</nav>
+</div>
 
-	<h3>프로젝트 참여</h3>
-	<table border="1">
-		<tr>
-			<th>/</th>
-			<th width="100px">프로젝트명</th>
-			<th width="330px">참여기간</th>
-			<th width="125px">역할</th>
-			<th width="125px">발주사</th>
-		</tr>
-		<tr>
-			<th>1</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-		<tr>
-			<th>2</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-		<tr>
-			<th>3</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-		<tr>
-			<th>4</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-	</table>
-
-	<table border="1">
-		<h3>본 인 소 개</h3>
-		<tr>
-			<td>
-				<textarea cols="105" rows="15" maxlength="80">
-			   
-				</textarea>
-			</td>
-				
-<!--  			청춘에서만 같은 청춘 쓸쓸하랴? 인간에 소금이라 가장
-				오직 피에 부패뿐이다. 모래뿐일 있는 가는 웅대한 그들은 가진 기관과 품고 위하여, 보라. 못할 바이며, 오직 그들에게
-				그러므로 광야에서 우리는 남는 부패뿐이다. 우리 청춘 관현악이며, 것은 구하지 불러 같이 찬미를 이것이다. 그들의 동력은
-				굳세게 되는 살 돋고, 이것을 물방아 무엇을 봄바람이다. 모래뿐일 끝까지 청춘의 목숨을 실로 우리는 그러므로 것은 아름답고
-				이것이다. 피어나는 용기가 피는 이것이야말로 이것이다. 위하여서, 열락의 거친 살 영원히 사막이다. 이상의 있으며, 청춘
-				풀이 동력은 구하지 때에, 것이다. 하는 위하여 그들은 뜨거운지라, 살았으며, 날카로우나 곧 맺어, 따뜻한 듣는다. -->	 
-		</tr>
-		</tabel>
-		<table border="1"><br>
-			<tr>
-				<th width="190px">개인정보 유효 기간</th>
-				<td width="585px">1년<input type="radio" id="" name="asd">
-								  3년<input type="radio" id="" name="asd">
-								  5년<input type="radio" id="" name="asd">
-								  10년<input type="radio" id="" name="asd">
-							
-				</td>
-				
-			</tr>
-		</table>
-		<br>
-		<a href="./memberView.html"><!-- <input type="button" value="확인"> --><button type="button" class="btn btn-link">확인</button></a>&nbsp&nbsp<a href="./memberForm.html"><!-- <input type="button" value="초기화"> --><button type="button" class="btn btn-link">초기화</button></a>
-		<br>
-	<br><a href="./memberList.html"><!-- <input type="submit" value="목록"> --><button type="button" class="btn btn-link">목록</button></a>
-    </form>
-	</body>
 </htm1>

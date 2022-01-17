@@ -16,12 +16,12 @@
 		/* table{
 			background-color: #bcaaa4; */
 			/* background-image: url(../../../../study_html/public/images/post.jpg); 
-			background-size: 1800px 1250px; */
-		} 
+			background-size: 1800px 1250px;
+		}  */
 		h3{
 			font-family: 궁서체;
 		}
-		th{
+		th, p{
 			text-align: center;
 			font-style: oblique;
 		}
@@ -30,8 +30,8 @@
 	<table class="table table-hover">
   <thead>
    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-   <audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
-    padding-bottom: 10px;"></audio> <tr><h3>회원정보 수정</h3></tr>
+   <P>Music</P><audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
+    padding-bottom: 10px;">뮤직</audio> <tr><h3>회원정보 수정</h3></tr>
    </div>
   </thead>
   <br>
@@ -266,7 +266,30 @@
   </tbody>
 </table>		
 
-<div class="d-grid gap-2 d-md-flex justify-content-center">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="d-grid gap-2 d-md-flex justify-content-center">
 <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
 	        <li class="breadcrumb-item"><a href="./memberEdit.html">수정</a></li>
@@ -274,6 +297,8 @@
 	        <li class="breadcrumb-item"><a href="./memberList.html">목록</a></li>
         </ol>
 </nav>
-</div>
+</div> -->
 
+
+</body>
 </htm1>
