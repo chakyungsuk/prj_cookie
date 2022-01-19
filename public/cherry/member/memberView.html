@@ -25,17 +25,23 @@
 			text-align: center;
 			font-style: oblique;
 		}
+		#aaa {
+			/* clear: both; */
+			float: left;
+		}
 </style> 
+
+ <img src="../../../../study_html/public/images/kakao_social_icon.png">
+ <img src="../../../../study_html/public/images/kakao_social_logo_icon.png">
 	
-	<table class="table table-hover">
-  <thead>
-   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-   <P>Music</P><audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
-    padding-bottom: 10px;">뮤직</audio> <tr><h3>회원정보 수정</h3></tr>
-   </div>
-  </thead>
-  <br>
-  <tbody>
+<table class="table table-hover">
+  	<thead>
+		<span id="aaa"><h3>회원정보 수정</h3></span>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+			<P style="margin: 15px">Music</P><audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
+			padding-bottom: 10px;">뮤직</audio>
+			</div>
+	</thead>
     <tr>
       <th scope="row" class="table-active" width="20%">이 름</th>
       <td colspan="2" width="30%">고 양 이</td>
@@ -53,9 +59,9 @@
     <tr>
       <th scope="row" class="table-active">성 별</th>
       <td colspan="2"><div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" disabled checked>
-  <label class="form-check-label" for="inlineCheckbox3">남</label>
-</div>
+	  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" disabled checked>
+	  <label class="form-check-label" for="inlineCheckbox3">남</label>
+	  </div>
 <div class="form-check form-check-inline">
   <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" disabled>
   <label class="form-check-label" for="inlineCheckbox3">여</label>
@@ -284,12 +290,12 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-        <button type="button" class="btn btn-danger"><a href="./memberList.html">삭제</a></button>
+        <button type="button" class="btn btn-danger"><a href="./memberList.html">삭제</a></button><br>
       </div>
     </div>
   </div>
 </div>
-
+<br>
 
 
 <!-- <div class="d-grid gap-2 d-md-flex justify-content-center">

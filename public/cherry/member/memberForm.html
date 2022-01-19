@@ -25,16 +25,19 @@
 			text-align: center;
 			font-style: oblique;
 		}
+		#aaa {
+			float: left;
+		}
 </style> 
 	
 	<table class="table table-hover">
-  <thead>
-   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-   <P>Music</P><audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
-    padding-bottom: 10px;">뮤직</audio> <tr><h3>회원정보 수정</h3></tr>
-   </div>
-  </thead>
-  <br>
+  	<thead>
+		<span id="aaa"><h3>회원정보 수정</h3></span>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+			<P style="margin: 15px">Music</P><audio src="../../../../study_html/public/multimedia/asdf.mp3" controls autoplay loop style="padding-top: 10px;
+			padding-bottom: 10px;">뮤직</audio>
+			</div>
+	</thead>
   <tbody>
 	<tr>
 		<th scope="row" class="table-active" width="20%">이 름</th>
@@ -44,7 +47,7 @@
 	</tr>
     <tr>
       <th scope="row" class="table-active">생 일</th>
-      <td>2020-01-12</td>
+      <td><input type="date"></td>
     </tr>
     <tr>
       <th scope="row" class="table-active">국 적</th>
@@ -171,44 +174,44 @@
     </tr>
     <tr>
       <th scope="row" class="table-active">결혼유무</th>
-      <td colspan="2"><div class="form-check form-switch">
-		  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-		  <label class="form-check-label" for="flexSwitchCheckChecked"></label>
-	  </div></td>
+      <td colspan="2"><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">무</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">유</label>
+</div>
+      </td>
+      
       <th class="table-active">자녀유무</th>
-      <td><div class="form-check form-switch">
-		  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-		  <label class="form-check-label" for="flexSwitchCheckChecked"></label>
-	  </div></td>
+      <td><div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">무</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">유</label>
+</div></td>
     </tr>
     <tr>
       <th scope="row" class="table-active">결혼기념일</th>
-      <td colspan="2"> 
-      	 <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
-      </td>
+      <td colspan="2"><input type="date"></td>
       <th class="table-active">좋아하는 색</th>
       <td class="form-label form-control-sm">
 		<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"></td>
     </tr>
     <tr>
       <th scope="row" class="table-active">모바일 마케팅 수신 동의</th>
-      <td colspan="2"><div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window1"  >
-  <label class="form-check-label" for="inlineCheckbox3">동의</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window1" >
-  <label class="form-check-label" for="inlineCheckbox3">미동의</label>
-</div></td>
+      <td colspan="2"><div class="form-check form-switch gap-2  mx-auto">
+		  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+		  <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+		</div></td>
       <th class="table-active">이메일 마케팅 수신 동의</th>
-      <td><div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window2">
-  <label class="form-check-label" for="inlineCheckbox3">동의</label>
-</div>
-<div class="form-check form-check-inline">
-  <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3" name="window2">
-  <label class="form-check-label" for="inlineCheckbox3">미동의</label>
-</div></td>
+      <td><div class="form-check form-switch gap-2  mx-auto">
+		  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+		  <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+	  </div></td>
     </tr>
     <th class="table-active">취미(중복가능)</th>
       
@@ -250,16 +253,16 @@
   		}
   </Style>
   	<tr>
-  	  <th width="50px" class="table-active">/</th>
-      <th width="150px" class="table-active">프로젝트명</th>
-      <th width="350px" class="table-active">참여기간</th>
-      <th width="150px" class="table-active">역할</th>
-      <th width="150px" class="table-active">발주사</th>
+  	  <th width="5%" class="table-active">/</th>
+      <th width="15%" class="table-active">프로젝트명</th>
+      <th width="45%" class="table-active">참여기간</th>
+      <th width="15%" class="table-active">역할</th>
+      <th width="15%" class="table-active">발주사</th>
     </tr>  
   	  <th class="table-active">1</th>
       <td class="apple"><div class="mb-3">
   		 <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example"></td>
-      <td class="apple">01.01.01 ~ 02.02.02</td>
+      <td class="apple"><input type="date"> ~ <input type="date"></td>
       <td class="apple"><div class="mb-3">
 		 <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example"></td>
       <td class="apple"><div class="mb-3">

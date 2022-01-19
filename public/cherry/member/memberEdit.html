@@ -5,239 +5,437 @@
 <meta charset="uTF-8">
 <meta name="viewport" content="width=dievice-width, initiol-scale=1.0">
 
-
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
 <title>Cha html projects</title>
- 
 </head>
 <body>
-	<link href="../../../../study_html/public/css/style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+body {
+	background-color: #efebe9;
+}
+/* table{
+			background-color: #bcaaa4; */
+/* background-image: url(../../../../study_html/public/images/post.jpg); 
+			background-size: 1800px 1250px;
+		}  */
+h3 {
+	font-family: 궁서체;
+}
 
-	<h3><li>회원가입 수정</h3>
-	<hr >
-	<form action="./memberView.html" method="get" id="post" name="post"
-		enctype="multipart/form-data"></form>
+th, p {
+	text-align: center;
+	font-style: oblique;
+}
 
-	<table border="1">
-		<tr>
-			<th width="170px">이 름</th>
-			<td width="150px"><input type="text" id="" name="" value="고 양 이"></td>
-			<th rowspan="6">사 진</th>
-			<td rowspan="6"><img src="../../../../study_html/public/images/cat.jpg" width="230px"
-				height="150px"></td>
-		</tr>
-		<tr>
-			<th>생 일</th>
-			<td><input type="date" id="" name="" value="2020-01-01"></td>
-		</tr>
-		<tr>
-			<th>아 이 디</th>
-			<td><input type="text" id="" name="" value="cha0054"></td>
-		</tr>
-		<tr>
-			<th>성 별</th>
-			<td>남<input type="radio" id="" name="human" checked>여<input
-				type="radio" id="" name="human"></td>
-		</tr>
-		<tr>
-			<th>국 적</th>
-			<td><select>
-					<option>대한민국</option>
-					<option>이란</option>
-					<option>태국</option>
-					<option>스위스</option>
-					<option>북한</option>
-			</select></td>
-		</tr>
-		<tr>
-			<th>비밀번호</th>
-			<td><input type="password" id="" name="" value="1234"></td>
-		</tr>
-		<tr>
-			<th>주 소</th>
-			<td colspan="3"><input type="text" size=80 id="" name=""
-				value="서울특별시 강서구"></td>
-		</tr>
-		<tr>
-			<th>모바일</th>
-			<td><select>
-					<option>010</option>
-					<option>011</option>
-			</select>-<input type="text" size="1" value="1234">-<input type="text"
-				size="1" value="1234"></td>
-			<th>모바일 마케팅 수신 동의</th>
-			<td>동의<input type="radio" id="" name="ch" value="y" checked>
-				미동의<input type="radio" id="" name="ch" value="n"></td>
-		</tr>
-		<tr>
-			<th>전화번호</th>
-			<td><select>
-					<option>02</option>
-					<option>062</option>
-					<option>042</option>
-					<option>031</option>
-			</select>-<input type="text" size="1" id="" name="" value="1234">-<input
-				type="text" size="1" id="" name="" value="1234"></td>
-			<th>팩스번호</th>
-			<td><select>
-					<option>02</option>
-					<option>062</option>
-					<option>042</option>
-					<option>031</option>
-			</select>-<input type="text" size="1" id="" name="" value="3451">-<input
-				type="text" size="1" id="" name="" value="3828"></td>
-		</tr>
-		<tr>
-			<th>이메일</th>
-			<td colspan="4"><input type="text" size="" value="cha0054">
-				@ <select>
-					<option>naver.com</option>
-					<option>gamil.com</option>
-					<option>hanmail.net</option>
-					<option>awekfjks.net</option>
-					<option></option>
-			</select></td>
-		</tr>
-		<th>추천인</th>
-		<td><input type="text" value="멍멍이"></td>
-		<th>이메일 마케팅 수신 동의</th>
-		<td>동의<input type="radio" id="" name="cs" value="y" checked>
-			미동의<input type="radio" id="" name="cs" value="n"></td>
-		<tr>
-			<th>비밀번호 문제</th>
-			<td><input type="text" placeholder="직접 문제 입력" value="사과나무는?"></td>
-			<th>비밀번호 답</th>
-			<td><input type="text" size="32" value="사과"></td>
-		</tr>
-		<tr>
-			<th>sns 계정</th>
-			<td><input type="text" value="cha0054"></td>
-			<th>홈 페이지</th>
-			<td><input type="text" size="32"
-				value="https://www.instagram.com"></td>
-		</tr>
-		<tr>
-			<th>직 업</th>
-			<td><input type="text" value="개발자"></td>
-			<th>결혼여부</th>
-			<td>기혼<input type="radio" id="" name="marry" value="y">
-				미혼<input type="radio" id="" name="marry" value="n" checked></td>
-		</tr>
-		<tr>
-			<th>결혼기념일</th>
-			<td><input type="date" value=""></td>
-			<th>자녀유무</th>
-			<td>유<input type="radio" id="" name="apple" value="y"> 무<input
-				type="radio" id="" name="apple" value="n" checked></td>
-		</tr>
-		<tr>
-			<th>취 미(중복가능)</th>
-			<td colspan="3">운동<input type="checkbox" id="" name=""
-				value="운동" checked> 독서<input type="checkbox" id="" name=""
-				value="독서"> 게임<input type="checkbox" id="" name=""
-				value="게임" checked> 개발<input type="checkbox" id="" name=""
-				value="개발" checked> 낮잠<input type="checkbox" id="" name=""
-				value="낮잠"> 자전거<input type="checkbox" id="" name=""
-				value="자전거"> 직접입력 <input type="text" size="2"></td>
-		</tr>
-		<tr>
-			<th>좋아하는 색</th>
-			<td colspan="3"><input type="color" value="#f98802"></td>
-		</tr>
-
-	</table>
-
-	<h3>프로젝트 참여</h3>
-	<hr>
-	<table border="1">
-		<tr>
-			<th>/</th>
-			<th width="100px">프로젝트명</th>
-			<th width="330px">참여기간</th>
-			<th width="125px">역할</th>
-			<th width="125px">발주사</th>
-		</tr>
-		<tr>
-			<th>1</th>
-			<td><input type="txet" value="개발"></td>
-			<td><input type="month" value="2021-01"> ~ <input
-				type="month" value="2022-01"></td>
-			<td><input type="text" value="보조" size="9"></td>
-			<td><input type="text" value="000" size="9"></td>
-		</tr>
-		<tr>
-			<th>2</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-		<tr>
-			<th>3</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-		<tr>
-			<th>4</th>
-			<td><input type="txet"></td>
-			<td><input type="month"> ~ <input type="month"></td>
-			<td><input type="text" size="9"></td>
-			<td><input type="text" size="9"></td>
-		</tr>
-	</table>
-
-	<table border="1">
-		<h3>본 인 소 개</h3>
-		<hr>
-		<tr>
-			<td><textarea cols="105" rows="15" maxlength="80"></textarea></td>
-
-		</tr>
-		</tabel>
-		<table border="1">
-			<br>
+#aaa {
+	float: left;
+}
+</style>
+	<table class="table table-hover">
+		<thead>
+			<span id="aaa"><h3>회원정보 수정</h3></span>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+				<P style="margin: 15px">Music</P>
+				<audio src="../../../../study_html/public/multimedia/asdf.mp3"
+					controls autoplay loop
+					style="padding-top: 10px; padding-bottom: 10px;">뮤직
+				</audio>
+			</div>
+		</thead>
+		<tbody>
 			<tr>
-				<th width="190px">개인정보 유효 기간</th>
-				<td width="585px">1년<input type="radio" id="" name="asd">
-					3년<input type="radio" id="" name="asd" checked> 5년<input
-					type="radio" id="" name="asd"> 10년<input type="radio" id=""
-					name="asd">
-
-				</td>
-
+				<th scope="row" class="table-active" width="20%">이 름</th>
+				<td colspan="2"><input class="form-control form-control-sm"
+					type="text" aria-label=".form-control-sm example" width="20%"
+					value="고양이"></td>
+				<th rowspan="4" style="padding-top: 95px;" class="table-active">사
+					진</th>
+				<td rowspan="4" colspan="3"><img
+					src="../../../../study_html/public/images/cat.jpg" width="200px"
+					height="200px"></td>
 			</tr>
-		</table>
+			<tr>
+				<th scope="row" class="table-active">생 일</th>
+				<td><input type="datetime" value="2020-01-12"></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">국 적</th>
+				<td colspan="2"><input class="form-control form-control-sm"
+					list="datalistOptions" id="exampleDataList" placeholder="대한민국">
+					<datalist id="datalistOptions">
+						<option value="대한민국">
+						<option value="태국">
+						<option value="미국">
+						<option value="일본">
+						<option value="러시아">
+					</datalist></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">성 별</th>
+				<td colspan="2"><div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" id="inlineCheckbox3"
+							name="apple" value="option3" checked> <label
+							class="form-check-label" for="inlineCheckbox3">남</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" id="inlineCheckbox3"
+							name="apple" value="option3"> <label
+							class="form-check-label" for="inlineCheckbox3">여</label>
+					</div></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">아이디</th>
+				<td colspan="2"><input class="form-control form-control-sm"
+					type="text" aria-label=".form-control-sm example" value="apple"></td>
+				<th class="table-active">비밀번호</th>
+				<td>
+					<div class="mb-3">
+						<input type="password" class="form-control form-control-sm"
+							id="exampleInputPassword1" placeholder="최대 8자리" maxlength="8"
+							value="****">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">비밀번호 힌트</th>
+				<td colspan="2"><input class="form-control form-control-sm"
+					type="text" aria-label=".form-control-sm example" width="30%"
+					value="좋아하는 나무는?"></td>
+				<th class="table-active">비밀번호 힌트 답</th>
+				<td width="30%"><input class="form-control form-control-sm"
+					type="text" aria-label=".form-control-sm example" value="사과나무">
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">주 소</th>
+				<td colspan="4">
+					<!-- <label for="button-addon1" class="form-label"></label>
+						<button class="btn btn-outline-secondary" type="button"
+							id="button-addon1" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">주소 찾기</button> -->
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="서울특별시 강서구"
+							aria-label="Recipient's username"
+							aria-describedby="button-addon2">
+						<button class="btn btn-outline-secondary" type="button"
+							id="button-addon1" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">주소검색</button>
+					</div> <!--MODAL -->
+					<div class="modal fade" id="exampleModal" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									<h3 style="text-align: center">주소 검색</h3>
+									<br> <br>
+									<div class="input-group mb-3">
+										<input class="form-control form-control-lg" type="text"
+											placeholder="주소 입력"> <br> <a
+											href="https://map.naver.com/v5"
+											class="btn btn-outline-secondary" role="button"
+											id="button-addon2">검색</a>
+									</div>
+									<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+									<p>예) 건물명 : 방배동 우성아파트</p>
+									<p>도로명 : 테헤란로 152</p>
+									<p>지역번 : 역삼동 737</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">닫기</button>
+									<button type="button" class="btn btn-primary">확인</button>
+								</div>
+							</div>
+						</div>
+					</div> <!-- MODAL END -->
+			<tr>
+				<th scope="row" class="table-active">이메일</th>
+				<td colspan="4"><div class="input-group mb-3">
+						<form class="row gy-2 gx-3 align-items-center">
+							<div class="col-auto">
+								<label class="visually-hidden" for="autoSizingInput">Name</label>
+								<input type="text" class="form-control" id="autoSizingInput"
+									placeholder="sdfkkw">
+							</div>
+							<div class="col-auto">
+								<label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+								<div class="input-group">
+									<div class="input-group-text">@</div>
+									<input type="text" class="form-control"
+										id="autoSizingInputGroup" placeholder="naver.com">
+								</div>
+							</div></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">추천인</th>
+				<td colspan="2"><input class="form-control form-control-sm"
+					type="text" aria-label=".form-control-sm example" value="멍멍이"></td>
+				<th class="table-active">직 업</th>
+				<td><input class="form-control form-control-sm" type="text"
+					aria-label=".form-control-sm example" value="개발자"></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">sns계정</th>
+				<td colspan="2"><input class="form-control form-control-sm"
+					type="text" aria-label=".form-control-sm example" value="apple">
+				</td>
+				<th class="table-active">홈페이지</th>
+				<td><input class="form-control form-control-sm" type="text"
+					aria-label=".form-control-sm example" value="www.apple.net">
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">결혼유무</th>
+				<td colspan="2"><div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" id="inlineCheckbox3"
+							value="option3" checked> <label class="form-check-label"
+							for="inlineCheckbox3">무</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" id="inlineCheckbox3"
+							value="option3"> <label class="form-check-label"
+							for="inlineCheckbox3">유</label>
+					</div></td>
+				<th class="table-active">자녀유무</th>
+				<td><div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" id="inlineCheckbox3"
+							value="option3" checked> <label class="form-check-label"
+							for="inlineCheckbox3">무</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" id="inlineCheckbox3"
+							value="option3"> <label class="form-check-label"
+							for="inlineCheckbox3">유</label>
+					</div></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">결혼기념일</th>
+				<td colspan="2"><input type="datetime"></td>
+				<th class="table-active">좋아하는 색</th>
+				<td class="form-label form-control-sm"><input type="color"
+					class="form-control form-control-color" id="exampleColorInput"
+					value="#563d7c"></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">모바일 마케팅 수신 동의</th>
+				<td colspan="2"><div
+						class="form-check form-switch gap-2  mx-auto">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckChecked" checked> <label
+							class="form-check-label" for="flexSwitchCheckChecked"></label>
+					</div></td>
+				<th class="table-active">이메일 마케팅 수신 동의</th>
+				<td><div class="form-check form-switch gap-2  mx-auto">
+						<input class="form-check-input" type="checkbox" role="switch"
+							id="flexSwitchCheckChecked" checked> <label
+							class="form-check-label" for="flexSwitchCheckChecked"></label>
+					</div></td>
+			</tr>
+			<th class="table-active">취미(중복가능)</th>
+			<td colspan="4"><div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox"
+						id="inlineCheckbox1" value="option1" checked> <label
+						class="form-check-label" for="inlineCheckbox1">운동</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox"
+						id="inlineCheckbox2" value="option2"> <label
+						class="form-check-label" for="inlineCheckbox2">독서</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox"
+						id="inlineCheckbox3" value="option3" checked> <label
+						class="form-check-label" for="inlineCheckbox3">게임</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox"
+						id="inlineCheckbox3" value="option4" checked> <label
+						class="form-check-label" for="inlineCheckbox3">개발</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox"
+						id="inlineCheckbox3" value="option5"> <label
+						class="form-check-label" for="inlineCheckbox3">낮잠</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox"
+						id="inlineCheckbox3" value="option5"> <label
+						class="form-check-label" for="inlineCheckbox3">자전거</label>
+				</div>
+		</tbody>
+
+	</table>
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<h3>프로젝트 참여</h3>
+			</tr>
+		</thead>
+		<tbody>
+			<Style type="text/css">
+.apple {
+	text-align: center;
+}
+</Style>
+			<tr>
+				<th width="5%" class="table-active">/</th>
+				<th width="15%" class="table-active">프로젝트명</th>
+				<th width="55%" class="table-active">참여기간</th>
+				<th width="10%" class="table-active">역할</th>
+				<th width="15%" class="table-active">발주사</th>
+			</tr>
+			<th class="table-active">1</th>
+			<td class="apple"><div class="mb-3">
+					<input class="form-control form-control-sm" type="text"
+						aria-label=".form-control-sm example" value="개발"></td>
+			<td class="apple"><input type="datetime" value="01.01.01">
+				~ <input type="datetime" value="02.02.02"></td>
+			<td class="apple"><div class="mb-3">
+					<input class="form-control form-control-sm" type="text"
+						aria-label=".form-control-sm example" value="조수"></td>
+			<td class="apple"><div class="mb-3">
+					<input class="form-control form-control-sm" type="text"
+						aria-label=".form-control-sm example" value="naver"></td>
+			<tr>
+				<th scope="row" class="table-active">2</th>
+				<td></td>
+				<th></th>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">3</th>
+				<td></td>
+				<th></th>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row" class="table-active">4</th>
+				<td></td>
+				<th></th>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
 		<br>
-		<a href="./memberList.html"><!-- <input type="submit" value="목록"> --><button type="button" class="btn btn-link">목록</button></a>
-		 <a href="./memberView.html"><!-- <input type="submit" value="확인"> --><button type="button" class="btn btn-link">확인</button>	 </a>
-		</form>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<h3>본 인 소 개</h3>
+				</tr>
+			</thead>
+			<br>
+			<tbody>
+				<div class="form-floating">
+					<textarea class="form-control" placeholder="Leave a comment here"
+						id="floatingTextarea2" style="height: 250px" maxlength="200">청춘에서만 같은 청춘 쓸쓸하랴? 인간에 소금이라 가장 오직 피에 부패뿐이다. 모래뿐일 있는 가는 웅대한 그들은 가진 기관과 품고 위하여, 보라. 못할 바이며, 오직 그들에게 그러므로 광야에서 우리는 남는 부패뿐이다. 우리 청춘 관현악이며, 것은 구하지불러 같이 찬미를 이것이다. 그들의 동력은 굳세게 되는 살 돋고, 이것을 물방아 무엇을 봄바람이다. 모래뿐일 끝까지 청춘의 목숨을 실로 우리는 그러므로 것은 아름답고 이것이다. 피어나는 용기가 피는 이것이야말로 이것이다. 위하여서, 열락의 거친 살 영원히 사막이다. 이상의 있으며, 청춘 풀이 동력은 구하지 때에, 것이다. 하는 위하여 그들은 뜨거운지라, 살았으며, 날카로우나 곧 맺어, 따뜻한 듣는다.</textarea>
+					<label for="floatingTextarea2">최대 200글자 가능</label>
+				</div>
+			</tbody>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+		<table class="table">
+			<thead>
+				<tr></tr>
+			</thead>
+				<tbody>
+					<br>
+					<tr>
+						<th scope="row" class="table-active">개인정보 유효 기간</th>
+						<td colspan="4"><div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio"
+								id="inlineCheckbox1" value="option3" name="window3"> <label
+								class="form-check-label" for="inlineCheckbox1">1년</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio"
+								id="inlineCheckbox2" value="option3" name="window3"> <label
+								class="form-check-label" for="inlineCheckbox2">2년</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio"
+								id="inlineCheckbox3" value="option3" name="window3" checked>
+								<label class="form-check-label" for="inlineCheckbox3">3년</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio"
+								id="inlineCheckbox4" value="option3" name="window3"> <label
+								class="form-check-label" for="inlineCheckbox4">5년</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio"
+								id="inlineCheckbox5" value="option3" name="window3"> <label
+								class="form-check-label" for="inlineCheckbox5">10년</label>
+							</div>
+						</td>
+					</tr>
+			   </tbody>
+	   </table>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-end"
+				role="group" aria-label="Basic mixed styles example">
+				<a href="./memberView.html"><button type="button"
+				class="btn btn-success">확인</button></a>
+				<button type="button" class="btn btn-warning position-relative"
+				data-bs-toggle="modal" data-bs-target="#game">초기화</button>
+				<button type="button" class="btn btn-danger" data-bs-toggle="modal"
+				data-bs-target="#game2">목록</button>
+			</div>
 
+			<!-- 초기화 s -->
+
+			<div class="modal fade" id="game" tabindex="-1"
+				aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModal">경 고</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">모든 데이터가 없어지며, 처음화면으로 이동합니다.</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+							<a href="./memberForm.html"><button type="button" class="btn btn-primary">초기화</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 초기화 e-->
+
+			<!-- 목록 s -->
+			<div class="modal fade" id="game2" tabindex="-1"
+				aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">경 고</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">모든 데이터가 지워지며, 목록으로 이동 됩니다.</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+							<a href="./memberList.html"><button type="button" class="btn btn-primary">목록으로</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 목록 e  -->
+
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+				crossorigin="anonymous"></script>
 </body>
 </htm1>
