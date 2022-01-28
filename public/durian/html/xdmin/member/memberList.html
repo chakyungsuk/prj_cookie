@@ -12,7 +12,11 @@
 <body>
 
 <style type="text/css">
-	
+	.container {
+		justify-content: center; /* 수평 정렬 */
+		align-items: center; /* 수직 정렬 */
+		width: 700px;
+	}
 	.col {
 		border: 1px solid black;
 	}
@@ -21,15 +25,15 @@
 
 <div class="container">
 	<div class="row">
-		<div class="">
-			<img src="../../../images/manager_image/main.jpg" width="10%">
+		<div class="col-md">
+			<img src="../../../images/manager_image/main.jpg" width="140%">
 		</div>	
-		<div class="">
-			<h2 style="margin: 10px;">Durian Company</h2>
+		<div class="col-md-8">
+			<h1 style="margin: 80px">Durian Company</h1>
 		</div>
 	</div>
 	<div class="container">
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs" style="margin-top: 50px">
 			<li class="nav-item">
 		    	<a class="nav-link active" aria-current="page" href="#">Home</a>
 		    </li>
@@ -53,16 +57,16 @@
 	<br>
 	<div class="container">
 	  <div class="row g-2">
-	    <div class="col-2">
-	      <div class="p-3 border bg-light">Custom column padding</div>
+	    <div class="col-3">
+	      <div class="p-3 border bg-light">asdfasdf</div>
 	    </div>
-	    <div class="col-2">
-	      <div class="p-3 border bg-light">Custom column padding</div>
+	    <div class="col-3">
+	      <div class="p-3 border bg-light">asdfasdfasdf</div>
 	    </div>
-	    <div class="col-2">
+	    <div class="col-3">
 	      <div class="p-3 border bg-light">시작일</div>
 	    </div>
-	    <div class="col-2">
+	    <div class="col-3">
 	      <div class="p-3 border bg-light">종료일</div>
 	    </div>
 	  </div>
