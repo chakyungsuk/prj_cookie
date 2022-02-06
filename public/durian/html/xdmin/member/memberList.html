@@ -15,7 +15,7 @@
 	.container {
 		justify-content: center; /* 수평 정렬 */
 		align-items: center; /* 수직 정렬 */
-		min-width: 700px;
+		width: 700px;
 	}
 	.col {
 		border: 1px solid black;
@@ -60,16 +60,16 @@
 	<br>
 	<div class="container">
 	  <div class="row g-2">
-	    <div class="col-12 col-sm-3 col-lg-6">
+	    <div class="col-lg-3 col-md-6 col-sm-12">
 	      <div class="p-3 border bg-light">asdfasdf</div>
 	    </div>
-	    <div class="col-12 col-sm-3 col-lg-6">
+	    <div class="col-lg-3 col-md-6 col-sm-12">
 	      <div class="p-3 border bg-light">asdfasdfasdf</div>
 	    </div>
-	    <div class="col-12 col-sm-3 col-lg-6">
+	    <div class="col-lg-3 col-md-6 col-sm-12">
 	      <div class="p-3 border bg-light">시작일</div>
 	    </div>
-	    <div class="col-12 col-sm-3 col-lg-6">
+	    <div class="col-lg-3 col-md-6 col-sm-12">
 	      <div class="p-3 border bg-light">종료일</div>
 	    </div>
 	  </div>
@@ -134,13 +134,15 @@
 	</div>
 </div>
 
-<div class="container" id="">
-		<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-			<img src="../../../images/manager_image/delete.png" width="7%">
+<div class="container">
+	<div class="" id="delete">
+		<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+			<img src="../../../images/manager_image/delete.png" width="3%">
 		</button>
-	<div class="d-grid gap-0 d-md-flex justify-content-md-end" id="delete">
-		<button class="btn btn-danger me-md-2" type="button">Danger</button>
-		<button class="btn btn-danger"type="button">Danger</button>
+		<div class="d-grid gap-0 d-md-flex justify-content-md-end" id="delete">
+			<button class="btn btn-danger me-md-2" type="button">Danger</button>
+			<button class="btn btn-danger"type="button">Danger</button>
+		</div>
 	</div>
 </div>
 
