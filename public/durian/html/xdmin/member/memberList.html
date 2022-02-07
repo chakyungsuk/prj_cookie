@@ -23,19 +23,20 @@
 	@delete {
 		float: right;
 	}
+	
 
 </style>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md">
-			<img src="../../../images/manager_image/main.jpg" width="140%">
+<div class="container-fluid d-none d-sm-block">
+	<div class="row h-100">
+		<div class="col-md" style="text-align: center; margin-top:60px">
+			<img src="../../../images/manager_image/main.jpg" width="40%">
 		</div>	
 		<div class="col-md-8">
 			<h1 style="margin: 80px">Durian Company</h1>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container-fluid">
 		<ul class="nav nav-tabs" style="margin-top: 50px">
 			<li class="nav-item">
 		    	<a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -58,7 +59,7 @@
 		</ul>
 	</div>
 	<br>
-	<div class="container">
+	<div class="container-fluid">
 	  <div class="row g-2">
 	    <div class="col-lg-3 col-md-6 col-sm-12">
 	      <div class="p-3 border bg-light">asdfasdf</div>
@@ -72,19 +73,18 @@
 	    <div class="col-lg-3 col-md-6 col-sm-12">
 	      <div class="p-3 border bg-light">종료일</div>
 	    </div>
-	  </div>
+  	</div>
 	</div>
-	
 	<hr>
 	
 	<div class="table table-dark table-hover">
 		<table class="table">
 			<thead>
 			  <tr>
-			    <th scope="col">#</th>
-			    <th scope="col">First</th>
-			    <th scope="col">Last</th>
-			    <th scope="col">Handle</th>
+			    <th scope="col" class="table-active">#</th>
+			    <th scope="col" class="table-active">First</th>
+			    <th scope="col" class="table-active">Last</th>
+			    <th scope="col" class="table-active">Handle</th>
 			  </tr>
 			</thead>
 			돋보기
@@ -134,14 +134,16 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container-fluid px-0">
 	<div class="" id="delete">
-		<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
-			<img src="../../../images/manager_image/delete.png" width="3%">
+		<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+			<img src="../../../images/manager_image/delete.png" width="8%">
 		</button>
-		<div class="d-grid gap-0 d-md-flex justify-content-md-end" id="delete">
-			<button class="btn btn-danger me-md-2" type="button">Danger</button>
-			<button class="btn btn-danger"type="button">Danger</button>
+		<div class="d-grid gap-0 d-md-flex justify-content-md-end">
+			<button class="btn btn-info me-md-2" type="button">
+				<img src="../../../images/manager_image/plus.png" width="12%">
+			</button>
+			<button class="btn btn-danger" type="button">Danger</button>
 		</div>
 	</div>
 </div>
