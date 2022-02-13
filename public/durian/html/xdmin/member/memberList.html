@@ -21,19 +21,23 @@
 <body>
 
 <style type="text/css">
-	.container {
+	/* .container {
 		width: 940px;
         margin: 10px auto;
-        padding: 20px;
+        padding: 20px; */
         
  /*  	justify-content: center;  수평 정렬 
 		align-items: center;  수직 정렬 
 		width: 700px; 
 		min-width:480px;
 		max-width:767px;  */
-	}
-	.col {
-		border: 1px solid black;
+	
+	#border {
+		border: 1px solid gray; 
+		border-top-style : non;
+		border-left-style : non;
+		border-bottom-style : non;
+		border-left-style : non;
 	}
 	#left {
 		float: right;
@@ -48,19 +52,32 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-12 col-sm-12 col-lg-3">
-			<img src="../../../images/manager_image/logo1.png" width="160px">
+		<div class="col-12 col-sm-12 col-lg-2">
+			<img src="../../../images/manager_image/logo1.png" width="200px">
  		</div>
-		<div class="col-12 col-sm-12 col-lg-6" style="text-align: center; margin-top:10px;"> 
+		<div class="col-12 col-sm-12 col-lg-4" style="text-align: center; margin-top:15px;"> 
 			<h3>ten thousand recipes</h3>
 		</div>
-		<div class="col-12 col-sm-12 col-lg-3">
-		asd
+		<div class="col-12 col-sm-12 col-lg-1">
+		</div>
+		<div class="col-12 col-sm-12 col-lg-2">
+		</div>
+		<div class="col-12 col-sm-2 col-lg-2" style="margin-top: 15px;">
+			<img src="../../../images/manager_image/USER(CEO).jpg" width="30px" style="float: left; margin-right: 10px;">
+			<h6>Cha (CEO)</h6> <h6>Administrator</h6>
+		</div>
+		<div class="col-12 col-sm-2 col-lg-1" style="margin-top: 20px;">
+			<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+				<option selected>언 어</option>
+				<option value="1">한 국</option>
+				<option value="2">미 국</option>
+				<option value="3">일 본</option>
+			</select>
 		</div>
 	</div>
 	<div class="container">
 		<div class="col-12">
-		<ul class="nav nav-tabs" style="margin-top: 50px">
+		<ul class="nav nav-tabs" style="margin-top: 20px">
 			<li class="nav-item">
 		    	<a class="nav-link active" aria-current="page" href="#">Home</a>
 		    </li>
@@ -82,22 +99,68 @@
 		</ul>
 		</div>
 	</div>
-	
-	
-	<br>
+	<div style="margin-left: 11px; margin-top: 20px;">
+		<h3>Code</h3>
+	</div>
 	<div class="container">
-	  <div class="row g-2">
-	    <div class="col-lg-3 col-md-6 col-sm-12">
-	      <div class="p-3 border bg-light">삭제여부</div>
+	  <div class="row g-2" id="border">
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+			<select class="form-select form-select" aria-label=".form-select-sm example">
+				<option selected>삭제여부</option>
+				<option value="1">삭제</option>
+				<option value="2">보관</option>
+				<option value="3">기타</option>
+			</select>
 	    </div>
-	    <div class="col-lg-3 col-md-6 col-sm-12">
-	      <div class="p-3 border bg-light">회원검색</div>
+		<div class="col-lg-2 col-md-6 col-sm-12">
+			<select class="form-select form-select" aria-label=".form-select-sm example">
+				<option selected>날짜</option>
+				<option value="1">1월</option>
+				<option value="2">2월</option>
+				<option value="3">3월</option>
+				<option value="4">4월</option>
+				<option value="5">5월</option>
+				<option value="6">6월</option>
+				<option value="7">7월</option>
+				<option value="8">8월</option>
+				<option value="9">9월</option>
+				<option value="10">10월</option>
+				<option value="11">11월</option>
+				<option value="12">12월</option>
+			</select>
 	    </div>
-	    <div class="col-lg-3 col-md-6 col-sm-12">
-	      <div class="p-3 border bg-light">시작일</div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+	      <input class="form-control" type="text" placeholder="시작일" aria-label="default input example">
 	    </div>
-	    <div class="col-lg-3 col-md-6 col-sm-12">
-	      <div class="p-3 border bg-light">종료일</div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+	     <input class="form-control" type="text" placeholder="종료일" aria-label="default input example">
+	    </div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+	    </div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+	    </div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+			<select class="form-select form-select" aria-label=".form-select-sm example">
+				<option selected>검색구분</option>
+				<option value="1">이름</option>
+				<option value="2">나이</option>
+				<option value="3">주소</option>
+			</select>
+	    </div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+			<input class="form-control" type="text" placeholder="검색어" aria-label="default input example">
+	    </div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
+	    	<div class="d-md-flex justify-content">
+				<button class="btn btn-warning btn-sm me-md-2" type="button" >
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+				<button class="btn btn-danger btn-sm me-md-2 " type="button" >
+					<i class="fa-solid fa-arrow-rotate-right"></i>
+				</button>
+			</div>
+	    </div>
+	    <div class="col-lg-2 col-md-6 col-sm-12">
 	    </div>
   	</div>
 	</div>
@@ -171,14 +234,21 @@
 </div>
 
 <div class="container">
-<div class="d-grid gap-2 d-md-flex justify-content" >
-	<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
-		<i class="fa-solid fa-trash-can"></i>
-	</button>
-	<button class="btn btn-info btn-sm me-md-2 " type="button" >
-		<i class="fa-solid fa-plus"></i>	
-	</button>
-</div>
+	<div class="col-lg-12 col-md-3 col-sm-3" >
+		<div class="gap-2 d-md-flex justify-content" >
+			<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+				<i class="fa-solid fa-trash-can"></i>
+			</button>
+		</div>
+		<div class="d-md-flex justify-content-end" >
+			<button class="btn btn-success btn-sm me-md-2 " type="button" >
+				<i class="fa-solid fa-file-excel"></i>	
+			</button>
+			<button class="btn btn-info btn-sm me-md-2 " type="button" >
+				<i class="fa-solid fa-plus"></i>	
+			</button>
+		</div>
+	</div>
 </div>
 
 <!-- Modal -->
