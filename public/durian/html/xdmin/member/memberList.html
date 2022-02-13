@@ -33,7 +33,8 @@
 		max-width:767px;  */
 	
 	#border {
-		border: 1px solid gray; 
+		border: 1px solid;
+		border-color: gray; 
 		border-top-style : non;
 		border-left-style : non;
 		border-bottom-style : non;
@@ -100,8 +101,9 @@
 		</div>
 	</div>
 	<div style="margin-left: 11px; margin-top: 20px;">
-		<h3>Code</h3>
+		<h3 style="margin-bottom: 0px;">Code</h3>
 	</div>
+	<br>
 	<div class="container">
 	  <div class="row g-2" id="border">
 	    <div class="col-lg-2 col-md-6 col-sm-12">
@@ -140,7 +142,7 @@
 	    <div class="col-lg-2 col-md-6 col-sm-12">
 	    </div>
 	    <div class="col-lg-2 col-md-6 col-sm-12">
-			<select class="form-select form-select" aria-label=".form-select-sm example">
+			<select class="form-select form-select" aria-label=".form-select-sm example" style="margin-bottom: 8px;">
 				<option selected>검색구분</option>
 				<option value="1">이름</option>
 				<option value="2">나이</option>
@@ -208,6 +210,7 @@
 		</table>
 	</div>
 </div>
+
 	<div>
 		<nav aria-label="Page navigation example">
 		  <ul class="pagination justify-content-center">
@@ -217,7 +220,7 @@
 		    <li class="page-item">
 		      <a class="page-link" href="#"><</a>
 		    </li>
-		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#" active>1</a></li>
 		    <li class="page-item"><a class="page-link" href="#">2</a></li>
 		    <li class="page-item"><a class="page-link" href="#">3</a></li>
 		    <li class="page-item">
@@ -229,12 +232,10 @@
 		  </ul>
 		</nav>
 	</div>
-</div>
 
 <div class="container">
-	<div class="col-lg-12 col-md-3 col-sm-3" >
-		<div class="gap-2 d-md-flex justify-content" >
-			<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+	<div class="col-lg-12 col-md-12 col-sm-12" >
+			<button type="button" class="btn btn-danger btn-sm me-md-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float: left;"  >
 				<i class="fa-solid fa-trash-can"></i>
 			</button>
 		</div>
