@@ -11,18 +11,32 @@
 <link href="../../../bootstrap/bootstrap-5.1.3-examples/sign-in/signin.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+      body {
+        height: 100vh;
+        background-image: url('../../../images/manager_image/fdmain4-1.jpg ');
+        background-repeat : no-repeat;
+        background-size : cover;
+        max-width:100%;
       }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
+      .container {
+     	margin: auto;
+      	margin-right: 800px;
+      	max-width: 400px;
+      }
+      .input {
+      	border-top: noee;
+      	border-left: none;
+      	border-right: none;
+      	border-bottom : 3px solid white;
+  		outline: none;
+      }
+      @media all and (min-width:360px) and (max-width:1024px) {
+       .container {
+       	margin: auto;
+       }
+      @media (min-height: 1024px), screen and (orientation: portrait) { 
+    	.container {
+       margin-bottom: 400px;
       }
     </style>
 
@@ -30,29 +44,33 @@
 
 <body class="text-center">
     
-<main class="form-signin">
+<div class="container">
   <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+    <h1 class="h3 mb-5 fw-normal" style="color: white;">Ten Thousand Recipes</h1>
+    <div class="input" style="margin-bottom: 10px;">
+      <input type="text" placeholder="ID" size="46" style="background: transparent;">
     </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
+    <div class="input">
+      <input type="password" placeholder="Password" size="46" style= "background: transparent;">
     </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
   </form>
-</main>
+    <div class="checkbox mb-4" style="margin-top: 10px;">
+      <label>
+       <p style="color: gray;"><input type="checkbox"> Remember me </p>
+      </label>
+</div>
+    <button class="w-100 btn btn-sm btn-primary" type="submit">Login</button>
+    	<div class="row" style="margin-top: 150px;">
+   			<div class="">
+					<a href="https://www.facebook.com/"><img src="../../../images/manager_image/icon_sns_f.png" width="10%"></a>&nbsp&nbsp
+					<a href="https://www.kakaocorp.com/"><img src="../../../images/manager_image/icon_sns_k.png" width="10%"></a>&nbsp&nbsp
+					<a href="https://www.google.co.kr/"><img src="../../../images/manager_image/icon_sns_g.png" width="10%"></a>&nbsp&nbsp
+					<a href="https://www.naver.com/"><img src="../../../images/manager_image/icon_sns_n.png" width="10%"></a>
+			</div>
+		</div>
+    <p class="mt-5 mb-3" style="color: gray;">&copy; Happy Food 2022 ~</p>
+</div>
+
 
 
     
