@@ -30,13 +30,18 @@
       	border-bottom : none;
   		outline: none;
       }
+      #button {
+      	background-color: transparent;
+      }
       @media all and (min-width:360px) and (max-width:1024px) {
        .container {
        	margin: auto;
        }
+      }
       @media (min-height: 1024px), screen and (orientation: portrait) { 
     	.container {
        margin-bottom: 400px;
+      }
       }
     </style>
 
@@ -58,7 +63,7 @@
 			<p style="color: gray;"><input type="checkbox"> Remember me </p>
 		</label>
 	</div>
-    <button class="btn btn-sm btn-primary" type="submit" style="width: 330px">Login</button>
+    <button class="btn btn-sm btn-primary" type="submit" style="width: 330px;" id=button>Login</button>
    	<div class="row" style="margin-top: 150px;">
 		<div class="">
 			<a href="https://www.facebook.com/"><img src="../../../images/manager_image/icon_sns_f.png" width="10%"></a>&nbsp&nbsp
