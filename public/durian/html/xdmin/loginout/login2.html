@@ -30,6 +30,10 @@
       	border-bottom : none;
   		outline: none;
       }
+      .btn {
+      	width: auto;
+      	background-color: transparent;
+      }
       #button {
       	background-color: transparent;
       }
@@ -63,13 +67,23 @@
 			<p style="color: gray;"><input type="checkbox"> Remember me </p>
 		</label>
 	</div>
-    <button class="btn btn-sm btn-primary" type="submit" style="width: 330px;" id=button>Login</button>
-   	<div class="row" style="margin-top: 150px;">
-		<div class="">
-			<a href="https://www.facebook.com/"><img src="../../../images/manager_image/icon_sns_f.png" width="10%"></a>&nbsp&nbsp
-			<a href="https://www.kakaocorp.com/"><img src="../../../images/manager_image/icon_sns_k.png" width="10%"></a>&nbsp&nbsp
-			<a href="https://www.google.co.kr/"><img src="../../../images/manager_image/icon_sns_g.png" width="10%"></a>&nbsp&nbsp
-			<a href="https://www.naver.com/"><img src="../../../images/manager_image/icon_sns_n.png" width="10%"></a>
+    <button class="btn btn-sm btn-primary" type="submit" style="width: 330px;" id=button>
+    	<a href="../member/memberList.html" style="text-decoration: none;">Login</a>
+   	</button>
+   	<div class="" style="margin-top: 150px;">
+		<div class="col-lg-12 col-sm-12">
+		    <button class="btn btn-sm" type="submit">
+    			<a href="https://www.facebook.com/" style="text-decoration: none;"><p style="color: #3b5998;">Facebook</p></a>
+   			</button>
+		    <button class="btn btn-sm" type="submit">
+    			<a href="https://www.kakaocorp.com/" style="text-decoration: none;"><p style="color: #fff115;">Kakao</p></a>
+   			</button>
+		    <button class="btn btn-sm" type="submit">
+    			<a href="https://www.google.co.kr/" style="text-decoration: none;"><p style="color: #ffffff;">Google</p></a>
+   			</button>
+		    <button class="btn btn-sm" type="submit">
+    			<a href="https://www.naver.com/" style="text-decoration: none;"><p style="color: #00bd00;">Naver</p></a>
+   			</button>
 		</div>
 	</div>
   	<p class="mt-5 mb-3" style="color: gray;">&copy; Happy Food 2022 ~</p>
