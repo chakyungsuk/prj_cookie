@@ -5,9 +5,11 @@
 <meta charset="uTF-8">
 <meta name="viewport" content="width=dievice-width, initiol-scale=1.0">
 
+ <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
+
     <!-- Bootstrap core CSS -->
-<link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="../../../bootstrap/bootstrap-5.1.3-examples/sign-in/signin.css" rel="stylesheet">
+<link href="../../../css/user/bootstrap.min.css" rel="stylesheet">
+<link href="../../../css/user/navbar.css" rel="stylesheet">
 
 <title>Cha html projects</title>
 
@@ -21,7 +23,7 @@
         max-width:100%;
       }
       
-      @media all and (min-width:360px) and (max-width:1024px) {
+/*       @media all and (min-width:360px) and (max-width:1024px) {
        .container {
        	margin: auto;
        }
@@ -30,6 +32,19 @@
     	.container {
        margin-bottom: 400px;
       }
+      } */
+            .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
       }
 </style>
 
@@ -37,13 +52,54 @@
 
 <body class="text-center">
  
- <div class ="container">
- asd
- </div>
- 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+	<div class="container">
+		<a class="navbar-brand" href="#">Container</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
+		<div class="collapse navbar-collapse" id="navbarsExample07">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+		<form>
+			<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+		</form>
+		</div>
+	</div>
+</nav>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+	var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+	  return new bootstrap.Dropdown(dropdownToggleEl)
+	})
+</script>
+ 
+ <!-- Bootstrap core Js -->
 <script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../js/user/bootstrap.bundle.min.js"></script>
+<script src="../../../js/user/sidebars.js"></script>
+
+
+
+
 
 
 </body>
