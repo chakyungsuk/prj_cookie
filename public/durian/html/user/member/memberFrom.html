@@ -4,8 +4,12 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=dievice-width, initiol-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
 
 <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
 
     <!-- Bootstrap core CSS -->
 <link href="../../../css/user/bootstrap.min.css" rel="stylesheet">
@@ -14,33 +18,41 @@
 <title>Cha html projects</title>
 
 <style>
-
       body {
         height: auto;
-        background-image: url('../../../images/user_image/fd_re1.png');
+        background-image: url('../../../images/user_image/fd6.jpg');
         background-repeat : no-repeat; 
         background-size : cover;
         max-width:100%;
       }
-      
+       .container {
+   /*  	margin: auto;  */
+      	margin-right: 800px; 
+      } 
+      .input {
+      	border-top: noee;
+      	border-left: none;
+      	border-right: none;
+      	border-bottom : none;
+  		outline: none;
+  		text-align:center;
+  		justify-content:center;
+  		margin-bottom: 20px;
+      }
+      .btn{
+      	color: white;
+      	text-align: center;
+      }
       @media all and (min-width:360px) and (max-width:1024px) {
        .container {
-       	margin: auto;
-       }
+       	margin: auto; 
+     	 }
       }
       @media (min-height: 1024px), screen and (orientation: portrait) { 
     	.container {
        margin-bottom: auto;
-      }
+      	}
       } 
- /*            .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      } */
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -52,33 +64,91 @@
 
 <body class="text-center">
 
-<div class="container">
-	<nav class="navbar navbar-dark" aria-label="First navbar example">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#">Never expand</a>
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
 
-	<div class="collapse navbar-collapse" id="navbarsExample01">
-		<ul class="navbar-nav me-auto mb-2">
-			<li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Disabled</a>
-			</li>
-		</ul>
-	</div>
-	</div>
+
+
+	<nav class="navbar navbar-dark" aria-label="First navbar example">
+		<div class="container" style="justify-content: center;">
+			<a class="navbar-brand" href="#"><h3>Ten Thousand Recipes</h3></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+
+			<div class="collapse navbar-collapse" id="navbarsExample01">
+				<ul class="navbar-nav me-auto mb-2">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Disabled</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdown01">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>	
 	</nav>
 </div>
 
 
-
+<div class="container" style="margin-top: 100px";>
+	<div class="row">
+		<div class="col-12">
+			<div class="input">
+				<input type="text" placeholder="ID" size="40" style="background: transparent;">
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="input">
+				<input type="password" placeholder="Password" size="40" style="background: transparent;">
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="input">
+				<input type="text" placeholder="E-mail" size="40" style="background: transparent;">
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="input">
+				<input type="text" placeholder="Mobile" size="40" style="background: transparent;">
+			</div>
+		</div>
+		<div class="container" style="margin-top: 40px;">
+			<div class="row">
+				<div class="col-12">
+					<div class="form-check">
+						<label class="form-check-label" for="flexCheckDefault" style="color: white;">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+						이메일 정보 마케팅 사용 동의</label>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="form-check" style="margin-top: 10px;">
+						<label class="form-check-label" for="flexCheckDefault" style="color: white;">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+						모바일 정보 마케팅 사용 동의</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12" style="margin-top: 100px;">
+			<div>
+				<input type="submit" class="btn" style="color: red;" value="RESET" />			
+				<input type="submit" class="btn" style="color: blue;" value="Submit" />			
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
@@ -87,10 +157,9 @@
 </script>
  
  <!-- Bootstrap core Js -->
-<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-<script src="../../../js/user/bootstrap.bundle.min.js"></script>
-<script src="../../../js/user/sidebars.js"></script>
-
+<script src="../../../css/user/bootstrap.bundle.min.js"></script>
+<script src="../../../css/user/bootstrap.sidebars.js"></script>
+<script src="sidebars.js"></script>
 
 
 
