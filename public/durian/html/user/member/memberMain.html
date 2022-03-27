@@ -21,28 +21,40 @@
 <title>Cha html projects</title>
 
 <style type="text/css">
-	.body {
+	body {
 		width: 100%;
-		background-image: url('../../../images/user_image/backC.jpg');
+		/* background-image: url('../../../images/user_image/backC.jpg'); */
 		background-size: cover;
+		background-color: gray;
+		background-repeat : no-repeat; 
 	}
 /* 	.album {
 		background-image: url('../../../images/user_image/backC.jpg');
 		background-size: cover;
 	} */
-	
+    .input {
+		text-align:center;
+		justify-content:center;
+		margin-bottom: 20px;
+   	}
 </style>
 
 </head>
 
 <body class="text-center">
 	<!-- Header S -->
-	   <nav class="navbar navbar-dark bg-dark" aria-label="Eighth navbar example">
-    <div class="container">
-      <a class="navbar-brand" href="#"><h3>Ten Thousand Recipes</h3></a>
+    <div class="container navbar navbar-dark" aria-label="Eighth navbar example" style="margin-bottom: 2px;">
+    <div class="col-lg-8 col-sm-8" style="text-align: left;" >
+      <a class="navbar-brand" href="#">Ten Thousand Recipes</a>
+     </div>
+     <div class="col-lg-3 col-sm-3">
+      <a href=""><input type="button" id="signUp" class="btn" style="color: white;" value="NEW Recipes(레시피 등록)"/></a>
+      </div>
+      <div class="col-lg-1 col-sm-1">
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
         <span class="navbar-toggler-icon"></span>
       </button>
+      </div>
     <!-- Header E -->
 
      <!-- sidebar body S -->	
@@ -112,14 +124,14 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../../images/user_image/fd_re1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item active" data-bs-interval="1500">
+      <img src="../../../images/user_image/fd_re1.png" class="d-block w-100" alt="..." style="height: 600px;">
     </div>
-    <div class="carousel-item">
-      <img src="../../../images/user_image/fd_re1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="../../../images/user_image/fd6-1.jpg" class="d-block w-100" alt="..." style="height: 600px;">
     </div>
-    <div class="carousel-item">
-      <img src="../../../images/user_image/fd_re1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item" data-bs-interval="1500">
+      <img src="../../../images/user_image/fd3.jpg" class="d-block w-100" alt="..." style="height: 600px;">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -131,9 +143,13 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-				
 
-  <div class="album py-5 bg-light">
+	
+
+<div class="album py-5 bg-light">
+	<div class="col-12">
+		<h4 style="margin-bottom: 30px;">TOP 레시피 명예의 전당</h4>
+	</div>			
     <div class="container">
 
       <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 g-3">
@@ -172,7 +188,7 @@
 			<a class="thumbnail" href="" style="height:250px;">
               <img src="../../../images/user_image/lank3.jpg" style="margin-top: 20px;"></a>
             <div class="card-body" style="">
-              <p class="card-text">이것은 구름인가 토스트인가 한입 먹으면 살살 녹는 토스트!</p>
+              <p class="card-text">이것은 구름인가 토스트인가 살살 녹는 토스트</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a ref=""><button type="button" class="btn btn-sm btn-outline-secondary">자세히</button></a>
@@ -217,7 +233,7 @@
 			<a class="thumbnail" href="" style="height:250px;">
               <img src="../../../images/user_image/lank6.jpg" style="margin-top: 20px;"></a>
             <div class="card-body" style="">
-              <p class="card-text">이세상 김치 볶음밥이 아니다! 초간단 김치볶음밥 레시피</p>
+              <p class="card-text">이세상 김치 볶음밥이 아니다! 초간단 레시피</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a ref=""><button type="button" class="btn btn-sm btn-outline-secondary">자세히</button></a>
@@ -280,9 +296,9 @@
 <footer class="text">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="#">Back to top</a>
+      <a href="#" style="color: white;">Back to top</a>
     </p>
-<p class="" style="color: gray; justify-content: center;">&copy; Happy Food 2022 ~</p> 
+<p class="" style="color: white; justify-content: center;">&copy; Happy Food 2022 ~</p> 
  </div>
 </footer>
 
